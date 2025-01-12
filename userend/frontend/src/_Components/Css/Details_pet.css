@@ -1,0 +1,99 @@
+.pet-details-frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 175px auto;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #faf5f5;
+}
+
+.pet-image-section {
+    flex: 1; 
+    text-align: center;
+    overflow: hidden; /* Ensures no overflow */
+    border-radius: 10px; /* Aligns with the image border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-image-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.pet-details-image {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 10px; /* Match the container's border-radius */
+    border: none; /* Explicitly remove border */
+    box-shadow: none; /* Prevent any shadow around the image */
+}
+
+.pet-info-section {
+    flex: 2;
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.pet-info-section h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.pet-info-section p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.adopt-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adopt-button:hover {
+    background-color: #218838;
+}
+.confirmation-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .confirmation-logo {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #333;
+    margin: 5px 0;
+  }
+  

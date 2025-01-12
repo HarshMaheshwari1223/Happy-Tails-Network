@@ -1,0 +1,160 @@
+/* General Styling */
+.adoption-info-page {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(201, 192, 187, 0.9), rgba(254, 133, 57, 0.9)), 
+                url('https://images.contentstack.io/v3/assets/blt6f84e20c72a89efa/blt1473f8fa02cf305c/6261d1c93348304067e0dc0e/img-requirements-to-adopt-a-pet.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 100px 20px;
+  }
+  
+  /* Header Section */
+  .adoption-header {
+    margin-bottom: 50px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .adoption-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ff6f00;
+  }
+  
+  .adoption-subtitle {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    font-style: italic;
+    color: #fff;
+  }
+  
+  /* Steps Section */
+  .steps-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .steps-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .steps-section h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ff6f00;
+    text-align: center;
+  }
+  
+  .adoption-steps {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .adoption-steps li {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 15px 0;
+    padding-left: 40px;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adoption-steps li:hover {
+    background-color: rgba(255, 111, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .adoption-steps li::before {
+    content: "🐾";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 1.5rem;
+    color: #ff6f00;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .contact-section h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ff6f00;
+    text-align: center;
+  }
+  
+  .contact-details {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .contact-details p {
+    margin: 10px 0;
+  }
+  
+  .contact-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #e65a00;
+    transform: scale(1.05);
+  }
+  
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .steps-section, .contact-section {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .adoption-title {
+      font-size: 2.8rem;
+    }
+  
+    .adoption-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .contact-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+   }
+  }

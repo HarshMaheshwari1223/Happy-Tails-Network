@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff7f50;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff5722;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('https://media.licdn.com/dms/image/v2/D4D12AQEDEzDgyzjONQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1682008182186?e=2147483647&v=beta&t=u-dQOhEp3XRvr88D2tPFeupdqBWLWcvIB5zESJ1wIVI') center/cover no-repeat;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bolder;
+    padding: 300px 50px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+  
+  /* Services Section */
+  .services-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .services-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section_2 {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff5f0;
+  }
+  
+  .testimonials-section_2 h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .testimonials-container_2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial-card_2 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    font-style: italic;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card_2 h4 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: right;
+  }
+  
+  /* Call-to-Action Section */
+  .cta-section {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom:20px;
+  }
+  

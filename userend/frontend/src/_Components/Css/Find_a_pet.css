@@ -1,0 +1,116 @@
+/* General Styles for Pets Container */
+.pets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Pet Card Styling */
+.pet-card-view {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px; /* Prevent the card from growing too tall */
+}
+
+/* Pet card hover effect */
+.pet-card-view:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.pet-card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for image container */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image Styling */
+.pet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    transition: transform 0.3s ease;
+}
+
+/* Image hover effect */
+.pet-card-view:hover .pet-image {
+    transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+
+/* Header Styling */
+.pet-card-header {
+    background-color: #bfd8df;
+    /* height: 30px; */
+    padding: 1px 1px; /* Reduced padding to give less space to the header */
+    text-align: center;
+    font-size: 1rem; /* Reduced font size for the pet name */
+    font-weight: bold;
+    color: #333;
+    flex-grow: 0;
+}
+
+
+/* Body Styling */
+.pet-card-body {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1;
+    overflow: hidden; /* Prevent text from overflowing */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex container for info sections (Gender, Location, etc.) */
+.pet-info {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+    gap: 10px; /* Space between items */
+    margin-bottom: 10px;
+}
+
+.pet-info p {
+    margin: 0; /* Remove extra margins */
+    font-size: 1rem;
+    color: #333;
+}
+
+.pet-info strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer Section (Adopt Button) */
+.pet-card-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Adopt Button Styling */
+.adopt-button {
+    padding: 10px 20px;
+    background-color: #6a59ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adopt-button:hover {
+    background-color: #4a3ec6;
+}

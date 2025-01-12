@@ -1,0 +1,436 @@
+/* Global Styles */
+.home {
+    padding-top: 60px; /* Space to account for the navbar */
+  }
+  
+  /* Banner Section */
+  .banner-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .banner-image img {
+    width: 100%;
+    height: 100%; /* Ensure it covers the entire height */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 20%; /* Centered horizontally */
+    transform: translate(-50%, -50%); /* Centered vertically */
+    color: white;
+    text-align: center;
+  }
+  
+  .banner-text h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .banner-text p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Buttons Section */
+  .buttons-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Space around the buttons */
+    gap: 15px; /* Spacing between buttons */
+  }
+  
+  .custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    background-color: #e3ad92; /* Button color */
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: whitesmoke;
+    color: black; /* Darker shade on hover */
+  }
+  
+  .custom-button svg {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+  
+  /* Content Section */
+  .content {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Pet Cards Section */
+  .pet-cards-section {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .pet-cards-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .pet-cards-section p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .pet-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .pet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pet-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pet-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+  }
+  
+  .pet-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    padding: 8px 12px;
+    border: 1px solid #aaa;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+  
+  /* See More Button */
+  .see-more {
+    margin-left: auto; /* Align to the right */
+  }
+  
+  .see-more a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: brown;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .see-more a span {
+    margin-left: 5px;
+    transition: margin-left 0.3s ease; /* Animation effect */
+  }
+  
+  .see-more a:hover span {
+    margin-left: 10px; /* Expand the space on hover */
+  }
+  
+  /* Few Steps For Adopting Section */
+  .adoption-steps {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .adoption-steps h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the boxes */
+    flex-wrap: wrap; /* Allows it to wrap on smaller screens */
+    margin-bottom: 50px;
+  }
+  
+  .step {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .step:hover {
+    transform: translateY(-5px);
+  }
+  
+  .step-icon {
+    font-size: 2.5rem;
+    color: brown; /* Color of the icon */
+    margin-bottom: 15px;
+  }
+  
+  .step p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between the testimonials */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 50px;
+  }
+  
+  .testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .testimonial p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .user-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .user-info p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .quote-icon {
+    font-size: 1.2rem;
+    color: brown;
+    margin-right: 10px;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #A86C4D; /* Change the color as per your design */
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .newsletter p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .signup-button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .signup-button:hover {
+    background-color: #ddd;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .social-icons .fa-twitter,
+  .social-icons .fa-facebook-f,
+  .social-icons .fa-instagram {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .social-icons .fa-twitter:hover,
+  .social-icons .fa-facebook-f:hover,
+  .social-icons .fa-instagram:hover {
+    color: #ddd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .banner-text h1 {
+      font-size: 2.5rem;
+    }
+    
+    .banner-text p {
+      font-size: 1.2rem;
+    }
+    
+    .pet-cards-container {
+      flex-wrap: wrap;
+    }
+    
+    .pet-card img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .content h1 {
+      font-size: 2rem;
+    }
+    
+    .step {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner-text h1 {
+      font-size: 2rem;
+    }
+    
+    .banner-text p {
+      font-size: 1rem;
+    }
+    
+    .custom-button {
+      padding: 10px 15px;
+      font-size: 1rem;
+    }
+    
+    .pet-card img {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .testimonial {
+      width: 250px;
+    }
+    
+    .step {
+      width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner-text h1 {
+      font-size: 1.5rem;
+    }
+    
+    .banner-text p {
+      font-size: 0.9rem;
+    }
+    
+    .custom-button {
+      padding: 8px 10px;
+      font-size: 0.9rem;
+    }
+    
+    .pet-card img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .testimonial {
+      width: 200px;
+    }
+    
+    .step {
+      width: 100px;
+    }
+    
+    .footer-container {
+      flex-direction: column;
+    }
+  }
